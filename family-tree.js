@@ -39,12 +39,13 @@ class FamilyTree {
     
     const tree = `-- ${this.value} 
 ${this.children.map(child => {
+      
       if(child.children.length) {
-        console.log(child);
         return `--${child.log()}`;
+      } else {
+      return `------ ${child.value}`
       }
-      return `-- ${child.value}`
-    }).join('\n--')}`
+    }).join('\n')}`
     return tree
   }
 
@@ -54,20 +55,20 @@ ${this.children.map(child => {
   }
 }
 
-const squarepants = new FamilyTree('Spongebob');
-squarepants.insert('Patrick');
-squarepants.insert('Squidward');
+// const squarepants = new FamilyTree('Spongebob');
+// squarepants.insert('Patrick');
+// squarepants.insert('Squidward');
 
-const star = squarepants.findMember('Patrick');
-star.insert('Sandy');
-star.insert('Gary');
+// const star = squarepants.findMember('Patrick');
+// star.insert('Sandy');
+// star.insert('Gary');
 
-const cheeks = star.findMember('Sandy');
-cheeks.insert('Mrs. Puff');
+// const cheeks = star.findMember('Sandy');
+// cheeks.insert('Mrs. Puff');
 
-const tentacles = squarepants.findMember('Squidward');
-tentacles.insert('Mr. Krabs');
+// const tentacles = squarepants.findMember('Squidward');
+// tentacles.insert('Mr. Krabs');
 
-console.log(squarepants.log());
+// console.log(squarepants.log());
 
 module.exports = FamilyTree;

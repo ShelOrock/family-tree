@@ -1,0 +1,55 @@
+body {
+    background-color: peachpuff;
+    font-family: Courier;
+}
+
+#controls {
+    margin: 2rem auto;
+    background-color: burlywood;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-around;
+    height: 20vh;
+    padding: 1rem;
+}
+
+.input-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+}
+
+input {
+    width: 200px;
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+
+.btn {
+    height: 2rem;
+    background-color: burlywood;
+    border: 3px solid peachpuff;
+    font-family: Courier;
+    font-size: 1rem;
+}
+
+#canvas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-container {
+    background-color: burlywood;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.selected {
+    border: 3px black solid;
+}
